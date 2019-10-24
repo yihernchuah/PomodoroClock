@@ -1,0 +1,100 @@
+:root {
+  --main-bg-color: #F7F7F7;
+  --main-color: #293E40;
+  --btn-color: var(--main-color);
+  --btn-hover-color:#81B5A1;
+}
+body {
+    font-family: 'Helvetica', sans-serif !important;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    width:270px;
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+div {
+  padding: 6px;
+}
+form {
+  width: 550px;
+}
+div.top-commands {
+  position: absolute;
+  font-size: 25px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  color: var(--main-color);
+}
+div#config {
+  top: 5px; 
+  right: 10px;
+}
+.option-label, .option-input {
+  margin-left: 5px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: large;
+  color: var(--main-color);
+  cursor: pointer;
+}
+input[type=range], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+}
+button {
+  width: 55%;
+  background-color: var(--btn-color);
+  color: var(--main-bg-color);
+  padding: 14px 20px;
+  margin: 6px 0;
+  border: 1px var(--main-color) solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+button.options  {
+  height: 29px;
+  padding: 0 10px;
+}
+button:hover {
+    background-color: var(--btn-hover-color);
+}
+#timeCounter {
+  text-align: center;
+  font-size: 3em;
+}
+#pageDiv{
+  min-width:350px;
+  max-width:700px;
+  position:relative;
+  margin:auto;
+}
+#container {
+  margin: auto;
+}
+#clockFace {
+  stroke-width: 2px;
+  stroke: #fff; 
+}
+#clockHandSeconds { 
+  stroke-width: 1px; 
+  stroke: var(--btn-hover-color); 
+}
+#clockHandMinutes { 
+  stroke-width: 1px; 
+  stroke: #fff; 
+}
+.mark {
+  stroke-width: 1px; 
+  stroke: #fff;   
+}
